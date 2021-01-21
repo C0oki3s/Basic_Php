@@ -235,3 +235,28 @@ $J = "Jai";
 include "index.php" ?>
 </body>
 <html>
+	<br>
+<hr>
+
+<?php class Book{
+ var $R;
+ var $D;
+ var $J;
+}
+$book1 = new Book;
+$book1->author ="stark";
+$book1->in ="stark";
+$book1->owner ="stark";
+
+$book2 = new Book;
+$book2->author ="thor";
+$book2->in ="tony";
+$book2->owner ="tony";
+
+echo "$book1->author <br>";
+echo "$book1->in <br>";
+echo "$book1->owner <br>";
+echo "$book2->author <br>";
+echo "$book2->in <br>";
+echo "$book2->owner <br>";
+?>
