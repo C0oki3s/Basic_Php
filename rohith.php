@@ -273,6 +273,33 @@ function __construct($aR,$aD,$aJ){
 $hook1 = new Not("rohith","sai","krishna");
 echo $hook1->title;
 ?>
+	<br>
+<hr>
+<?php
+class K18HK{
+var $roll;
+var $name;
+var $cgpa;
+
+function __construct($aR,$aN,$aP){
+	$this->roll = $aR;
+	$this->name = $aN;
+	$this->cgpa = $aP;
+ }
+	function hasPassed(){
+	if($this->cgpa >= 5){
+	return "true";
+     }
+	return "false";
+	}
+}
+$Stu1 = new K18HK("60", "rohith", 6.1);
+$Stu2 = new K18HK("60", "jai", 4.1);
+$res1 = $Stu1->hasPassed();
+$res2 = $Stu2->hasPassed();
+echo "$Stu1->name and he is passed or not by bool $res1 <br>";
+echo "$Stu2->name and he is passed or not by bool $res2 <br>";
+?>
 	
 </body>
 <html>
