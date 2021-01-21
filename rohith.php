@@ -233,9 +233,7 @@ $R = "rohith";
 $S = "Sai";
 $J = "Jai";
 include "index.php" ?>
-</body>
-<html>
-	<br>
+		<br>
 <hr>
 
 <?php class Book{
@@ -260,3 +258,23 @@ echo "$book2->author <br>";
 echo "$book2->in <br>";
 echo "$book2->owner <br>";
 ?>
+	<br>
+<hr>
+<?php class Not{
+ var $R;
+ var $D;
+ var $J;
+function __construct($aR,$aD,$aJ){
+	$this->title = $aR;
+	$this->author = $aR;
+	$this->pages = $aR;
+}
+}
+$hook1 = new Not("rohith","sai","krishna");
+echo $hook1->title;
+?>
+	
+</body>
+<html>
+	
+
